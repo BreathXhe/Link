@@ -37,8 +37,14 @@
 
 # Coloaborate
 
-- git push --tags 提交tag
-- git push -f origin master 强行提交到远程仓库
-- git push -u origin master 如果当前分支与多个主机存在追踪关系，则可以使用 -u 参数指定一个默认主机，这样后面就可以不加任何参数使用git push
-- git push origin --delete [branchname] 删除远程分支
-- git pull origin <branch_name> --allow-unrelated-histories 允许不相关历史强制合并
+- git push --tags  # 提交tag
+- git push -f origin master  # 强行提交到远程仓库
+- git push -u origin master  # 如果当前分支与多个主机存在追踪关系，则可以使用 -u 参数指定一个默认主机，这样后面就可以不加任何参数使用git push
+- git push origin --delete [branchname]  # 删除远程分支
+- git pull origin <branch_name> --allow-unrelated-histories  # 允许不相关历史强制合并
+
+# Config
+
+- git config --global core.autocrlf false  # 换行符转换
+- git config --global gui.encoding utf-8  # 避免 ui 乱码
+- git config --global core.quotepath off  # 避免 git status 中文文件名乱码
