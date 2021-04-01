@@ -59,6 +59,10 @@
 `git checkout dev A.class`
 - 添加tag  
 `git tag -a ver.7.29.2 -m "ver.7.29.2"`
+- 获取原始代码库更新  
+`git fetch upstream`
+- 通过原始代码库合并  
+`git merge upstream/master`
 
 # Coloaborate
 
