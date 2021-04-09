@@ -19,23 +19,35 @@
 # State
 
 - 根据时间查询  
-`git log --no-merges --after="00:00:00 2017-4-28"`
+  `git log --no-merges --after="00:00:00 2017-4-28"`
+
 - 根据作者和时间查询  
-`git log --pretty=oneline --author="hexin" --since="2018-4-15"`
+  `git log --pretty=oneline --author="hexin" --since="2018-4-15"`
+
 - 根据作者查询  
-`git log --graph --author="chisongqi" --stat`
+  `git log --graph --author="chisongqi" --stat`
+
 - 查看remote地址，远程分支，还有本地分支与之相对应关系等信息  
-`git remote show origin`
+  `git remote show origin`
+
 - 与服务器同步删除本地分支  
-`git remote prune origin`
+  `git remote prune origin`
+
 - 查看远程库信息  
-`git remote -v`
+  `git remote -v`
+
 - 删除关联的origin远程库  
-`git remote rm origin`
+  `git remote rm origin`
+
 - 关联新的origin远程库(需要先删除以关联信息)  
-`git remote add origin [originlink]`
+  `git remote add origin [originlink]`
+
 - 修改关联的origin远程库  
-`git remote set-url origin [originlink]`
+  `git remote set-url origin [originlink]`
+
+- 删除本地和远程分支
+
+  `git push origin -d <branch_name>`
 
 # Common
 
