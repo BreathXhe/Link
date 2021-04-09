@@ -49,6 +49,10 @@
 
   `git push origin -d <branch_name>`
 
+- 使用rebase方式拉取
+
+  `git pull -r`
+
 # Common
 
 - 删除本地分支<branch_name>  
