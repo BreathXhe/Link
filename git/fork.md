@@ -1,14 +1,21 @@
-查看你的远程仓库的路径：git remote -v 
-如果只有origin的两行, 说明你未设置 upstream，一般情况下，设置好一次 upstream 后就无需重复设置
+### 查看远程仓库的路径
+``` git remote -v ```
+>如果只有origin的两行, 说明未设置 upstream，一般情况下，设置好一次 upstream 后就无需重复设置
 
-执行命令 git remote add upstream https://github.com/BreathXhe/xxx.git
+### 添加上游仓库
+``` git remote add upstream https://github.com/BreathXhe/xxx.git```
 
-再次执行命令 git remote -v 检查是否成功
+### 检查是否添加成功
+``` git remote -v ```
 
-将未提交的提交git push origin master
+### 推送本地修改
+``` git push origin master ```
 
-执行命令 git fetch upstream 抓取原仓库的更新
+### 拉取源仓库的更新
+``` git fetch upstream ```
 
-执行命令 git merge upstream/master 合并远程的master分支
+### 合并远程的master分支
+``` git merge upstream/master ```
 
-执行命令 git push 把本地仓库向github仓库（你fork到自己名下的仓库）推送修改
+### 推送合并的内容
+``` git push ```
