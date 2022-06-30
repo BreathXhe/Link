@@ -56,29 +56,49 @@
 # Common
 
 - 删除本地分支<branch_name>  
-`git branch -D branch_name`
+  `git branch -D branch_name`
+
 - 查看所有本地分支和远程分支  
-`git branch -a`
+  `git branch -a`
+
 - 只查看远程分支  
-`git branch -r`
+  `git branch -r`
+
 - 关联远程分支<release_rights>  
-`git branch --set-upstream release_rights origin/release_rights`
+  `git branch --set-upstream release_rights origin/release_rights`
+
 - 查看分支映射关系  
-`git branch -vv`
+  `git branch -vv`
+
 - 抛弃甲的版本，保留乙的  
-`git checkout --ours xxx/A.java`
+  `git checkout --ours xxx/A.java`
+
 - 抛弃乙的版本，完全采用甲的  
-`git checkout --theirs xxx/A.java`
+  `git checkout --theirs xxx/A.java`
+
 - 迁出指定tag版本  
-`git checkout ver.1.32`
+  `git checkout ver.1.32`
+
 - 从dev分支merge文件A.class到当前分支  
-`git checkout dev A.class`
+  `git checkout dev A.class`
+
 - 添加tag  
-`git tag -a ver.7.29.2 -m "ver.7.29.2"`
+  `git tag -a ver.7.29.2 -m "ver.7.29.2"`
+
 - 获取原始代码库更新  
-`git fetch upstream`
+  `git fetch upstream`
+
 - 通过原始代码库合并  
-`git merge upstream/master`
+  `git merge upstream/master`
+
+# Checkout
+
+- 从远程仓库同步指定文件
+
+  `git fetch`
+
+  `git checkout origin/master -- path/to/file`
+
 
 # Coloaborate
 
